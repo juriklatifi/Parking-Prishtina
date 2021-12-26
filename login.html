@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN - FLASH NEWS</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="Parkingu.css">
+</head>
+<body>
+	<header>
+	<div class="logo">
+		<a href="Parkingu.html"><img src="Img/logoo.jpg"></a>
+	</div>
+
+	<ul>
+			<li><a href="Harta.html">Harta</a></li>
+			<li><a href="ContactUs.html">Contact Us</a></li>
+			<li><a href="login.html">Account</a></li>
+
+		</ul>
+</header>
+
+	<div class="container">
+			<div class="box">
+				
+			<form action="">
+			<p class="username1">Username</p>
+			<input id="usernameinput" type="text" name="Username">
+
+			<br>
+
+			<p class="password1">Password</p>
+			<input id="passi" type="text" name="password">
+
+			<br>
+
+			<input type="submit" value="LOGIN" id="loginButton">
+			</form>
+
+			<div class="register"><a href="register.html"><p>REGISTER HERE</p></a>
+		</div>
+
+			
+		</div>
+
+	
+	</div>
+
+
+	<script type="text/javascript">
+
+		var loginButton = document.getElementById("loginButton");
+
+		var usernameR =  /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
+
+		var passwordR = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+		
+
+		loginButton.addEventListener("click", function(event){
+			var password = document.getElementById("passi").value;
+			var username = document.getElementById("usernameinput").value;
+
+			//KUSHTI PER USERNAME
+			if (username=="") {
+				event.preventDefault();
+				alert("Username nuk eshte valid");
+			}
+			else{
+				if (usernameR.test(username)==true) {
+					
+				}
+				else{
+					event.preventDefault();
+					alert("Username nuk eshte valid");
+				}
+				
+			}
+
+			//KUSHTI PER PASSWORD
+			if (password=="") {
+				event.preventDefault();
+				alert("Passwordi duhet te kete se paku 8 karakter ku ne to duhet te permbaje: shkronja te vogla, te medha, simbole dhe numra");
+			}
+			else{
+				if (passwordR.test(password)==true) {
+					
+				}
+				else{
+					event.preventDefault();
+					alert("Passwordi duhet te kete se paku 8 karakter ku ne to duhet te permbaje: shkronja te vogla, te medha, simbole dhe numra");
+				}
+				
+			}
+
+
+		})
+
+
+			
+
+
+
+	</script>
+
+</body>
+</html>

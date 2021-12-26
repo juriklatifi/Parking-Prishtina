@@ -11,9 +11,9 @@
 	</div>
 
 	<ul>
-			<li><a href="#">Harta</a></li>
+			<li><a href="Harta.html">Harta</a></li>
 			<li><a href="ContactUs.html">Contact Us</a></li>
-			<li><a href="#">Account</a></li>
+			<li><a href="login.html">Account</a></li>
 
 		</ul>
 </header>
@@ -34,19 +34,22 @@
 		<div class="pg1">
 			<div class="pg2">
 				<div class="nocash">
-					<img src="Img/nocash1.png">
-					<h2 class="tekst1">NO CASH</h2>
+					<img src="Img/nocash.png">
+					<div class="tesksti1">
+						<h2>NO CASH</h2>
+					</div>
 				</div>
 				<div class="clock">
 					<img src="Img/clock.png">
-					<h2 class="tekst2">ORARI</h2>
+					<div class="tesksti1">
+					<h2>ORARI</h2>
+				</div>
 				</div>
 				<div class="mengene">
 					<img src="Img/nparking.png">
-					<h2 class="tekst3">MENGENE</h2>
+					<div class="tesksti1">
+					<h2>MENGENE</h2>
 				</div>
-				<div>
-					<div></div>
 				</div>
 			</div>
 		</div>
@@ -60,22 +63,24 @@
 			</div>
 			<div class="D2">
 				<div class = "Kontakti">
-					<p>NA KONTAKTONI</p>
+					<div class="NaKontaktoni">
+						<p>NA KONTAKTONI</p>
+					</div>
 					<div class = "tedhenat">
-						<input type="text" class="input" placeholder="EMRI">
-						<input type="text" class="input" placeholder="MBIEMRI">
+						<input type="text" id="emri" placeholder="EMRI">
+						<input type="text" id="mbiemri" placeholder="MBIEMRI">
 					</div>
 					<div class="emaili">
-						<input type="text" class="input" placeholder="EMAILI">
+						<input type="text" id="emaili1" placeholder="EMAILI">
 					</div>
 					<div class ="subjekti">
-						<input type="text" class="input" placeholder="SUBJEKTI">
+						<input type="text" class="subjekti" placeholder="SUBJEKTI">
 					</div>
 					<div class ="kerkesajuaj">
-						<input type ="text " class="input" placeholder="KERKEA JUAJ"> 
+						<input type ="text " class="kerkesajuaj" placeholder="KERKEA JUAJ"> 
 					</div>
 					<div class="ButoniH">
-						<div class ="butoni">DERGO</div>
+						<input type="submit" id="dergo" name="" value="DERGO">
 					</div>
 					
 
@@ -83,6 +88,7 @@
 			</div>
 			
 		</div>
+	</div>
 	</main>
 	<footer>
 		<div class="footer1">
@@ -101,13 +107,97 @@
 			</div>
 			<div class = "footerdjathtas">
 				<div class="logoo">
-						<button class="logooo"><img src="Img/logoo.jpg"/></button>
+						<img src="Img/logoo.jpg"/>
+				</div>
+
+						<div class="MenuFooter">
+						
+						<ul>
+							<li>HARTA</li>
+							<li>CONTACT US</li>
+							<li>ACCOUNT</li>
+						</ul>
+
 						</div>
+
+
+
+
 					</div>
 			
 
 	</div>
 	</footer>
+
+	<script type="text/javascript">
+	var emriR = /^[A-Z][a-z]{2,15}/;
+	//Mbiemri Regex
+	var mbiemriR = /^[A-Z][a-z]{2,15}/;
+	//E-maili Regex
+	var emailiR = /^\w+[._-]?\w+@[A-Za-z]+[-]?[A-Za-z]+\.[A-Za-z]{2,3}/;
+	
+
+
+	var contactButton = document.getElementById("dergo");
+
+	contactButton.addEventListener("click", function (event) {
+	//Emri
+	var emri = document.getElementById("emri").value;
+	//Mbiemri
+	var mbiemri = document.getElementById("mbiemri").value;
+	//E-maili
+	var emaili = document.getElementById("emaili1").value;
+	//Subjekti
+
+
+
+
+	//Validimi i Emrit
+	if(emri == ""){
+				alert("Emri duhet te filloj me shkronje te madhe ");
+                event.preventDefault();
+            }else{
+                if(emriR.test(emri) == true){
+                    
+                }else{
+                 alert("Emri duhet te filloj me shkronje te madhe ");
+                  event.preventDefault();
+                }
+              
+            }
+
+   	//Validimi i Mbiemrit
+	if(mbiemri == ""){
+				alert("Mbiemri duhet te filloj me shkronje te madhe ");
+                event.preventDefault();
+            }else{
+                if(mbiemriR.test(mbiemri) == true){
+                    
+                }else{
+                 alert("Mbiemri duhet te filloj me shkronje te madhe ");
+                  event.preventDefault();
+                }
+              
+            }
+    //Validimi i E-mailit
+	if(emaili == ""){
+				alert("E-maili nuk eshte valid");
+                event.preventDefault();
+            }else{
+                if(emailiR.test(emaili) == true){
+                    
+                }else{
+                 alert("E-maili nuk eshte valid");
+                  event.preventDefault();
+                }
+              
+            }
+
+	})
+
+
+
+</script>
 
 </body>
 </html>

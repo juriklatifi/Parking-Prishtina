@@ -114,66 +114,64 @@ main{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	align-content: center;
 }
 .pg2{
 	width: 90%;
 	height: 400px;
-	border: 1px solid red;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-content: center;
 
 }
 
 .nocash{
-	width: 33.3%;
-	height: 300px;
+	width: 23%;
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
 	margin-left: 35px;
-
+	border-right: 5px solid #17529f;
+	border-spacing: 30px;
 }
 .nocash img{
-	width: 300px;
-	height: 250px;
-	margin-left: 110px;
+	width: 190px;
+	height: 190px;
 }
-.nocash .tekst1 {
-	width: 600px;
-	height: 200px;
-	border: 1px solid white;
+.tesksti1 {
 	display: flex;
-	margin-left: 185px;
-	color: blue;
-	justify-content: space-between;
+	justify-content: center;
+	width: 190px;
+	align-items: center;
+	height: 40%;
+
+}
+.tesksti1 h2{
+	margin-top: 30px;
+	font-family: 'Signika', sans-serif;
+	font-size: 21pt;
+	color: #17529f;
+
 }
 
+
 .clock{
-	width: 33.3%;
-	height: 300px;
+	width: 23%;
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
 	margin-left: 35px;
+	border-right: 5px solid #17529f;
+	border-spacing: 30px;
 
 }
 .clock img{
-	width: 300px;
-	height: 250px;
+	width: 190px;
+	height: 190px;
 }
-.clock .tekst2 {
-	width: 600px;
-	height: 200px;
-	border: 1px solid white;
-	display: flex; 
-	color: blue;
-	justify-content: space-between;
-}
+
 .mengene{
-	width: 33.3%;
+	width: 20%;
 	height: 300px;
 	display: flex;
 	flex-direction: column;
@@ -181,17 +179,10 @@ main{
 
 }
 .mengene img{
-	width: 300px;
-	height: 250px;
+	width: 190px;
+	height: 190px;
 }
-.mengene .tekst3 {
-	width: 600px;
-	height: 200px;
-	border: 1px solid white;
-	display: flex;
-	color: blue;
-	justify-content: space-between;
-}
+
 
 .Harta{
 	background: url("Img/PrishtinaMap.png");
@@ -206,11 +197,16 @@ main{
 	width: 50%;
 	height: 600px;
 	display: flex;
-	background: #de3333;
-	opacity: 0.5;
+	background: rgba(23, 82, 159, 0.66);
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.D1 h1{
+	color: white;
+	font-family: 'Signika', sans-serif;
+
 }
 .D2{
 	width: 50%;
@@ -219,39 +215,70 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: rgba(129, 129, 129, 0.5);
 
 }
 .Kontakti {
-	width: 300px;
-	height: 300px;
+	width: 500px;
+	height: 400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.Kontakti p {
-	background: blue;
-	color: white;
-	width: 300px;
-	height: 30px;
+
+.NaKontaktoni{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	background: #17529f;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 
 }
-.tedhenat input {
-	width: 110px;
+.NaKontaktoni p{
+	font-size: 14pt;
+	font-family: 'Signika', sans-serif;
+	left: 10px;
+	color: white;
+	position: absolute;
+}
+
+
+.tedhenat {
+	width: 100%;
 	height: 30px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	
 }
-.emaili input{
-	width: 300px;
+#emri{
+	width: 45%;
+	height: 30px;
+}
+
+#emaili1{
+	width: 100%;
 	height:30px;
 }
-.subjekti input{
-	width: 300px;
+
+#mbiemri{
+	width: 45%;
+	height:30px;
+	display: flex;
+
+}
+
+
+.subjekti{
+	width: 100%;
 	height: 30px;
 
 }
-.kerkesajuaj input {
-	width: 300px;
+.kerkesajuaj {
+	width: 100%;
 	height: 100px;
 
 }
@@ -268,7 +295,7 @@ main{
 }
 
 .ButoniH{
-	width: 300px;
+	width: 100%;
 	height: 30px;
 	display: flex;
 	flex-direction: row;
@@ -276,14 +303,13 @@ main{
 	align-items: center;
 
 }
-.butoni {
-	background: blue;
+#dergo {
+	background: #17529f;
 	color: white;
 	width: 80px;
-	height: 30px;
-	display: flex;
+	height: 35px;
 	text-align: center;
-	font-size: 16pt;
+	font-size: 14pt;
 	border-radius: 3px;
 }
 
@@ -304,7 +330,6 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border:1px white solid;
 	align-items: center;
 
 
@@ -314,19 +339,25 @@ footer{
 	flex-direction: column;
 	width: 50%;
 	height: 450px;
-	border:1px red solid;
+
 	justify-content: space-between;
 }
 .rrethnesh h1{
 	color:white;
+	font-family: 'Signika', sans-serif;
 }
 .rrethnesh p{
 	color:white;
 	margin-bottom: 100px;
+	font-family: 'Signika', sans-serif;
+	font-size: 14pt;
+
 
 }
 .copyright h2{
-	color: white
+	color: white;
+	font-family: 'Signika', sans-serif;
+	font-size: 10pt;
 }
 .rrethnesh {
 	display: flex;
@@ -347,18 +378,52 @@ footer{
 	flex-direction: column;
 	width: 50%;
 	height: 450px;
-	border:1px blue solid;
+	justify-content: space-between;
+
 }
 .logoo{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin-top: 20px;
-	margin-top: 65px;
+	width: 100%;
+	height: 110px;
+	justify-content: flex-end;
 }
-.logooo img{
+.logoo img{
+	margin-top: 110px;
 	width: 220px;
 	height: 110px;
-	display: flex;
 
+}
+.MenuFooter{
+	display: flex;
+	width: 100%;
+	height: 150px;
+	flex-direction: row;
+	color: white;
+	justify-content: flex-end;
+
+}
+.MenuFooter ul{
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Signika', sans-serif;
+	font-size: 12pt;
+
+
+
+}
+
+.MenuFooter ul li{
+	padding: 10px;
+
+
+}
+
+.containerH{
+	width: 80%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
 }

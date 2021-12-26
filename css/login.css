@@ -1,0 +1,97 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background:  #f1f1f1;
+}
+
+
+
+
+.container{
+	width: 80%;
+	height: 750px;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 350px;
+	height: 400px;
+	
+	background:  #086abd;
+
+}
+
+.username1{
+	width: 300px;
+	height: 30px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.username1 {
+	font-size: 18pt;
+	font-family: 'Signika', sans-serif;
+	color: white;
+}
+
+#usernameinput{
+	width: 300px;
+	height: 30px;
+}
+
+.password1{
+	width: 300px;
+	height: 30px;
+	display: flex;
+	justify-content: flex-start;
+}
+.password1{
+	font-size: 18pt;
+	font-family: 'Signika', sans-serif;
+	color: white;
+}
+
+#passi{
+	width: 300px;
+	height: 30px;
+}
+
+#loginButton{
+	width: 300px;
+	height: 30px;
+	background: #086abd;
+	color: white;
+	margin-top: 30px;
+}
+
+.register{
+	width: 300px;
+	display: flex;
+	height: 30px;
+	justify-content: flex-start;
+	margin-top: 50px;
+	color: white;
+}
+
+.register p{
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid blue;
+}
+
+.register a:link{
+	text-decoration: none;
+}

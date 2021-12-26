@@ -11,12 +11,163 @@
 	</div>
 
 	<ul>
-			<li><a href="#">Harta</a></li>
+			<li><a href="Harta.html">Harta</a></li>
 			<li><a href="ContactUs.html">Contact Us</a></li>
-			<li><a href="#">Account</a></li>
+			<li><a href="login.html">Account</a></li>
 
 		</ul>
 </header>
+
+<main>
+			<div class="Harta">
+			<div class="D1">
+					<h1 class="P1">PAGUAJ SHPEJTE</h1>
+					<h1 class = "P2"> DHE
+					SIGURT ME NE</h1>
+				
+				
+			</div>
+			<div class="D2">
+				<form action="">
+				<div class = "Kontakti">
+					<div class="NaKontaktoni">
+						<p>NA KONTAKTONI</p>
+					</div>
+					<div class = "tedhenat">
+						<input type="text" id="emri" placeholder="EMRI">
+						<input type="text" id="mbiemri" placeholder="MBIEMRI">
+					</div>
+					<div class="emaili">
+						<input type="text" id="emaili1" placeholder="EMAILI">
+					</div>
+					<div class ="subjekti">
+						<input type="text" class="subjekti" placeholder="SUBJEKTI (OPSIONAL)">
+					</div>
+					<div class ="kerkesajuaj">
+						<input type ="text " class="kerkesajuaj" placeholder="KERKESA JUAJ"> 
+					</div>
+					<div class="ButoniH">
+						<input type="submit" id="dergo" name="" value="DERGO">
+					</div>
+					
+			</div>
+		</form>
+			
+		</div>
+	</div>
+
+
+</main>
+	<footer>
+		<div class="footer1">
+			<div class="footermajtas">
+				<div class="rrethnesh">
+
+			<h1>RRETH NESH</h1>
+			<P>Ne jemi Parking Prishtina ku per synim kemi 
+			te lehtesojm pagesat e parkingjeve publike 
+			ne Komunen e Prishtines</P>
+			</div>
+			<div class="copyright">
+				<h2>Copyright 2021 all rights reserved
+				</h2>
+				</div>
+			</div>
+			<div class = "footerdjathtas">
+				<div class="logoo">
+						<img src="Img/logoo.jpg"/>
+				</div>
+
+						<div class="MenuFooter">
+						
+						<ul>
+							<li>HARTA</li>
+							<li>CONTACT US</li>
+							<li>ACCOUNT</li>
+						</ul>
+
+						</div>
+
+
+
+
+					</div>
+			
+
+	</div>
+	</footer>
+
+
+<script type="text/javascript">
+	var emriR = /^[A-Z][a-z]{2,15}/;
+	//Mbiemri Regex
+	var mbiemriR = /^[A-Z][a-z]{2,15}/;
+	//E-maili Regex
+	var emailiR = /^\w+[._-]?\w+@[A-Za-z]+[-]?[A-Za-z]+\.[A-Za-z]{2,3}/;
+	
+
+
+	var contactButton = document.getElementById("dergo");
+
+	contactButton.addEventListener("click", function (event) {
+	//Emri
+	var emri = document.getElementById("emri").value;
+	//Mbiemri
+	var mbiemri = document.getElementById("mbiemri").value;
+	//E-maili
+	var emaili = document.getElementById("emaili1").value;
+	//Subjekti
+
+
+
+
+	//Validimi i Emrit
+	if(emri == ""){
+				alert("Emri duhet te filloj me shkronje te madhe ");
+                event.preventDefault();
+            }else{
+                if(emriR.test(emri) == true){
+                    
+                }else{
+                 alert("Emri duhet te filloj me shkronje te madhe ");
+                  event.preventDefault();
+                }
+              
+            }
+
+   	//Validimi i Mbiemrit
+	if(mbiemri == ""){
+				alert("Mbiemri duhet te filloj me shkronje te madhe ");
+                event.preventDefault();
+            }else{
+                if(mbiemriR.test(mbiemri) == true){
+                    
+                }else{
+                 alert("Mbiemri duhet te filloj me shkronje te madhe ");
+                  event.preventDefault();
+                }
+              
+            }
+    //Validimi i E-mailit
+	if(emaili == ""){
+				alert("E-maili nuk eshte valid");
+                event.preventDefault();
+            }else{
+                if(emailiR.test(emaili) == true){
+                    
+                }else{
+                 alert("E-maili nuk eshte valid");
+                  event.preventDefault();
+                }
+              
+            }
+
+	})
+
+
+
+</script>
+
 
 </body>
 </html>
