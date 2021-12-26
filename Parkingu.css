@@ -114,6 +114,7 @@ main{
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	align-content: center;
 }
 .pg2{
 	width: 90%;
@@ -121,29 +122,116 @@ main{
 	border: 1px solid red;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
 
+}
+
+.nocash{
+	width: 33.3%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	margin-left: 35px;
+
+}
+.nocash img{
+	width: 300px;
+	height: 250px;
+	margin-left: 110px;
+}
+.nocash .tekst1 {
+	width: 600px;
+	height: 200px;
+	border: 1px solid white;
+	display: flex;
+	margin-left: 185px;
+	color: blue;
+	justify-content: space-between;
+}
+
+.clock{
+	width: 33.3%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	margin-left: 35px;
+
+}
+.clock img{
+	width: 300px;
+	height: 250px;
+}
+.clock .tekst2 {
+	width: 600px;
+	height: 200px;
+	border: 1px solid white;
+	display: flex; 
+	color: blue;
+	justify-content: space-between;
+}
+.mengene{
+	width: 33.3%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+
+}
+.mengene img{
+	width: 300px;
+	height: 250px;
+}
+.mengene .tekst3 {
+	width: 600px;
+	height: 200px;
+	border: 1px solid white;
+	display: flex;
+	color: blue;
+	justify-content: space-between;
+}
+
+.Harta{
+	background: url("Img/PrishtinaMap.png");
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.D1{
+	width: 50%;
+	height: 600px;
+	display: flex;
+	background: #de3333;
+	opacity: 0.5;
 	justify-content: center;
+	align-items: center;
 }
-
-.img1{
-	width: 33.3%;
-	height: 300px;
+.D2{
+	width: 50%;
+	height: 600px;
 	display: flex;
-
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-
-.img2{
-	width: 33.3%;
-	height: 300px;
+.Kontakti {
+	width: 200px;
+	height: 50px
 	display: flex;
-
 }
 
-.img3{
-	width: 33.3%;
-	height: 300px;
+
+.D1 .P1 {
+	width: 600px;
+	height: 200px;
+	border: 1px solid white;
 	display: flex;
-
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
-
-
